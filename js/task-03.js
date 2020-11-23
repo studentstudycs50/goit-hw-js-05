@@ -10,7 +10,7 @@
 // addItem(item) - получает новый товар и добавляет его к текущим
 // removeItem(item) - получет товар и, если он есть, 
 // удаляет его из текущих
-
+        
  class Storage{
     constructor(arrItems) {
         this.items = arrItems;
@@ -21,6 +21,7 @@
     
       addItem(item) {
         this.items.push(item); //получает новый товар и добавляет его к текущим
+      //this.items = [...items, item];
       }
     
       removeItem(item) {
