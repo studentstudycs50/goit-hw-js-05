@@ -29,7 +29,7 @@
           this.items.splice(this.items.indexOf(item), 1);
         }
       }
-
+              
  }
 const storage = new Storage([
   'Нанитоиды',

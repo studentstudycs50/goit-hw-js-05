@@ -12,36 +12,74 @@
 
 
 
-class StringBuilder{
-    constructor(value){
-        this._value = value;
-}
- get value(){
-     return this._value;
- }
- append(str){
-    this._value += str;
- }
- prepend(str){
-            this._value = str + this._value;
-          }
-          pad(str) {
-                  this.append(str);
-                  this.prepend(str);
-                }
-}
+// class StringBuilder{
+//     constructor(value){
+//         this._value = value;
+// }
+//  get value(){
+//      return this._value;
+//  }
+//  append(str){
+//     this._value += str;
+//  }
+//  prepend(str){
+//             this._value = str + this._value;
+//           }
+//           pad(str) {
+//             //return this._value = str + this._value + str;
+//                   this.append(str);
+//                   this.prepend(str);
+//                 }
+// }
 
-const builder = new StringBuilder('.');
-//console.log(builder);
+// const builder = new StringBuilder('.');
+// //console.log(builder);
 
-builder.append('^');
-console.log(builder.value); // '.^'
+// builder.append('^');
+// console.log(builder.value); // '.^'
 
-builder.prepend('^');
-console.log(builder.value); // '^.^'
+// builder.prepend('^');
+// console.log(builder.value); // '^.^'
 
-builder.pad('=');
-console.log(builder.value); // '=^.^='
+// builder.pad('=');
+// console.log(builder.value); // '=^.^='
+
+
+
+
+
+// выводим в одну строку мордочку =^.^=
+
+// class StringBuilder {
+//   constructor(string) {
+//       this._value = string;
+      
+//   }
+//   get value() {
+//       return this._value;
+//   }
+//   append(str) {
+//       // return this._value += str;
+//       this._value += str;
+//       return this;
+//   }
+//   prepend(str) {
+//       this._value = str + this._value;
+//       return this;
+  
+//   }
+//   pad(str) {
+//       this._value = str + this._value + str;
+//       return this;
+
+//       // this.append(str);
+//       // this.prepend(str);
+//   }
+// }
+
+// const builder = new StringBuilder('.');
+// builder.append('^').prepend('^').pad('=');
+// console.log(builder.value);
 
 
   
