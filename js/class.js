@@ -90,3 +90,5 @@
 // }
 // const max = new Admin({name:'Max', age: 25}, 'admin', [], true, true)
 // console.log(max); 
+
+
